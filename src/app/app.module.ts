@@ -8,13 +8,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryGuard } from './guards/gallery.guard';
 import { ImageService } from './services/image.service';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BaseComponent,
     GalleryComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

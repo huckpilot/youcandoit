@@ -1,7 +1,7 @@
 <div class="header">
   <a [routerLink]="['/']">Home</a>
   <div class="gallery-container">
-    <a class="toggle" (click)="toggleSub()">Gallery</a>
+    <a class="toggle" (click)="toggleSub()">Art</a>
     <div 
       class="sub"
       *ngIf="toggleType">
@@ -17,4 +17,6 @@
       <a [routerLink]="['/gallery/color-styling']">Color Styling</a>
     </div>
   </div>
+  <a [routerLink]="['/about']">About</a>
+  <a [routerLink]="['/contact']">Contact</a>
 </div>

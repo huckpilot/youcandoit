@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BaseComponent } from './components/base/base.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { GalleryGuard } from './guards/gallery.guard';
+
 
 const routes: Routes = [
   {
@@ -27,6 +30,14 @@ const routes: Routes = [
           entry: GalleryGuard
         }
       },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      }
     ]
   }
 ];
