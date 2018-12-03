@@ -16,18 +16,11 @@ export class GalleryComponent implements OnInit {
     private route: ActivatedRoute,
     private http: HttpClient
     ) {
-    this.router.events.subscribe((event) => {
-      // if (event instanceof NavigationEnd) {
-      //   const slug = event.url.substr(event.url.lastIndexOf('/') + 1);
-      //   this.images = this.http.get('http://localhost:4200/assets/' + slug + '.json').pipe(map(data => {
-      //     this.images = data;
-      //   }));
-      // }
-    });
   }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
+      console.log(data.entry.images);
       this.images = data.entry.images;
     });
   }

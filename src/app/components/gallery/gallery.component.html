@@ -1,8 +1,5 @@
-<p>
-  gallery works!
-</p>
 <div 
   class="images"
   *ngFor="let image of images">
-  {{ image }}
+  <img [src]="image" alt="">
 </div>
