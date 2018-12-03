@@ -1,0 +1,10 @@
+.header {
+  position: fixed;
+  width: 170px;
+  padding: 5px 10px;
+}
+
+.base {
+  position: relative;
+  left: 170px;
+}

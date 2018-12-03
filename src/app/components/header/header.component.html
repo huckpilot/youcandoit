@@ -1,0 +1,20 @@
+<div class="header">
+  <a [routerLink]="['/']">Home</a>
+  <div class="gallery-container">
+    <a class="toggle" (click)="toggleSub()">Gallery</a>
+    <div 
+      class="sub"
+      *ngIf="toggleType">
+      <div class="sub-container">
+        <a (click)="toggleItemsGroup()">Sketchbook</a>
+        <div *ngIf="toggleItems" class="items">
+          <a [routerLink]="['/gallery/sketchbook/2018']">2018</a>
+          <a [routerLink]="['/gallery/sketchbook/2017']">2017</a>
+          <a [routerLink]="['/gallery/sketchbook/2016']">2016</a>
+        </div>
+      </div>
+      <a [routerLink]="['/gallery/backgrounds']">Backgrounds</a>
+      <a [routerLink]="['/gallery/color-styling']">Color Styling</a>
+    </div>
+  </div>
+</div>

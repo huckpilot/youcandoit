@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.sub,
+.items {
+  display: flex;
+  flex-direction: column;
+}
