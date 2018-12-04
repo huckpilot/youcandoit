@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  width: 170px;
+  padding: 8px;
+}
+
+.base {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 170px);
+}

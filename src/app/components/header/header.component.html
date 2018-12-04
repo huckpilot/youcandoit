@@ -1,22 +1,28 @@
-<div class="header">
-  <a [routerLink]="['/']">Home</a>
-  <div class="gallery-container">
-    <a class="toggle" (click)="toggleSub()">Art</a>
-    <div 
-      class="sub"
-      *ngIf="toggleType">
-      <div class="sub-container">
-        <a (click)="toggleItemsGroup()">Sketchbook</a>
-        <div *ngIf="toggleItems" class="items">
-          <a [routerLink]="['/gallery/sketchbook/2018']">2018</a>
-          <a [routerLink]="['/gallery/sketchbook/2017']">2017</a>
-          <a [routerLink]="['/gallery/sketchbook/2016']">2016</a>
-        </div>
+<div class="container">
+  <div class="header">
+    <a class="link-a" [routerLink]="['/']">Home</a>
+    <div class="gallery-container link-a">
+      <div [ngClass]="{'active': toggleType}" class="toggle-container" (click)="toggleSub()">
+        <a class="toggle">Art</a><span class="arrow"></span>
       </div>
-      <a [routerLink]="['/gallery/backgrounds']">Backgrounds</a>
-      <a [routerLink]="['/gallery/color-styling']">Color Styling</a>
+      <div 
+        class="sub"
+        *ngIf="toggleType">
+        <div class="sub-container link-b">
+          <div [ngClass]="{'active': toggleItems}" class="toggle-container" (click)="toggleItemsGroup()">
+            <a class="toggle">Sketchbook</a><span class="arrow"></span>
+          </div>
+          <div *ngIf="toggleItems" class="items">
+            <a class="link-c" [routerLink]="['/gallery/sketchbook/2018']">2018</a>
+            <a class="link-c" [routerLink]="['/gallery/sketchbook/2017']">2017</a>
+            <a class="link-c" [routerLink]="['/gallery/sketchbook/2016']">2016</a>
+          </div>
+        </div>
+        <a class="link-b" [routerLink]="['/gallery/backgrounds']">Backgrounds</a>
+        <a class="link-b" [routerLink]="['/gallery/color-styling']">Color Styling</a>
+      </div>
     </div>
+    <a class="link-a" [routerLink]="['/about']">About</a>
+    <a class="link-a" [routerLink]="['/contact']">Contact</a>
   </div>
-  <a [routerLink]="['/about']">About</a>
-  <a [routerLink]="['/contact']">Contact</a>
-</div>
+</div>  

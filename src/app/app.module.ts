@@ -10,6 +10,7 @@ import { GalleryGuard } from './guards/gallery.guard';
 import { ImageService } from './services/image.service';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './components/contact/contact.component';
     GalleryComponent,
     HeaderComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

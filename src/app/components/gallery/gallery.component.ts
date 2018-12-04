@@ -6,7 +6,7 @@ import { mergeMap, shareReplay, map } from 'rxjs/operators';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
   images: any;
@@ -20,7 +20,6 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.subscribe(data => {
-      console.log(data.entry.images);
       this.images = data.entry.images;
     });
   }

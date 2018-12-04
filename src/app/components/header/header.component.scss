@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.link-a {
+  & + & {
+    margin-top: 8px;
+  }
+}
+
+.link-b {
+  margin-left: 8px;
+}
+
+.link-c {
+  margin-left: 8px;
+}
+
+.link-b,
+.link-c {
+  margin-top: 8px;
+}
+
+.link-a,
+.link-b,
+.link-c {
+  display: block;
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  &.active {
+    
+    .arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.arrow {
+  width:0;
+  border-bottom:solid 8px black;
+  border-right:solid 4px transparent;
+  border-left:solid 4px transparent;
+  position: relative;
+  left: 8px;
+}
+
+.sub,
+.items {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+}
