@@ -11,6 +11,7 @@ import { ImageService } from './services/image.service';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderMComponent } from './components/header-m/header-m.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     HeaderComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderMComponent
   ],
   imports: [
     BrowserModule,

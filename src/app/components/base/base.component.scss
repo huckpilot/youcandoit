@@ -7,6 +7,15 @@
   position: fixed;
   width: 170px;
   padding: 8px;
+  z-index: 1;
+}
+
+.desktop {
+
+}
+
+.mobile {
+  display: none;
 }
 
 .base {
@@ -14,4 +23,5 @@
   right: 0;
   top: 0;
   width: calc(100% - 170px);
+  z-index: 0;
 }
