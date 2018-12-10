@@ -17,18 +17,18 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'gallery',
+        path: 'art',
         component: GalleryComponent
       },
       {
-        path: 'gallery/:slug',
+        path: 'art/:slug',
         component: GalleryComponent,
         resolve: {
           entry: GalleryGuard
         }
       },
       {
-        path: 'gallery/:slug/:slug',
+        path: 'art/:slug/:slug',
         component: GalleryComponent,
         resolve: {
           entry: GalleryGuard

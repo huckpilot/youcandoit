@@ -8,21 +8,29 @@
       <div 
         class="sub"
         *ngIf="toggleType">
-        <div class="sub-container link-b">
-          <div [ngClass]="{'active': toggleItems}" class="toggle-container" (click)="toggleItemsGroup()">
+        <!-- <div class="sub-container link-b">
+          <div [ngClass]="{'active': sketchbookItems}" class="toggle-container" (click)="toggleSketchbook()">
             <a class="toggle">Sketchbook</a><span class="arrow"></span>
           </div>
-          <div *ngIf="toggleItems" class="items">
-            <a class="link-c" [routerLink]="['/gallery/sketchbook/2018']">2018</a>
-            <a class="link-c" [routerLink]="['/gallery/sketchbook/2017']">2017</a>
-            <a class="link-c" [routerLink]="['/gallery/sketchbook/2016']">2016</a>
+          <div *ngIf="sketchbookItems" class="items">
+            <a class="link-c" [routerLink]="['/art/sketchbook/2018']">2018</a>
+            <a class="link-c" [routerLink]="['/art/sketchbook/2017']">2017</a>
+            <a class="link-c" [routerLink]="['/art/sketchbook/2016']">2016</a>
+          </div>
+        </div> -->
+        <a class="link-b" [routerLink]="['/art/backgrounds']">Backgrounds</a>
+        <a class="link-b" [routerLink]="['/art/color-styling']">Color Styling</a>
+        <div class="sub-container link-b">
+          <div [ngClass]="{'active': comicItems}" class="toggle-container" (click)="toggleComic()">
+            <a class="toggle">Comics</a><span class="arrow"></span>
+          </div>
+          <div *ngIf="comicItems" class="items">
+            <a class="link-c" [routerLink]="['/art/comics/koreangry']">koreangry</a>
           </div>
         </div>
-        <a class="link-b" [routerLink]="['/gallery/backgrounds']">Backgrounds</a>
-        <a class="link-b" [routerLink]="['/gallery/color-styling']">Color Styling</a>
       </div>
     </div>
-    <a class="link-a" [routerLink]="['/about']">About</a>
-    <a class="link-a" [routerLink]="['/contact']">Contact</a>
+    <!-- <a class="link-a" [routerLink]="['/about']">About</a>
+    <a class="link-a" [routerLink]="['/contact']">Contact</a> -->
   </div>
 </div>  

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  landing: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.landing = `${window.location.origin}/assets/images/splash.jpg`;
   }
 
 }
