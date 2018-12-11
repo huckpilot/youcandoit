@@ -17,6 +17,10 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
+        path: 'work',
+        component: GalleryComponent
+      },
+      {
         path: 'work/:slug',
         component: GalleryComponent,
         resolve: {
