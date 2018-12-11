@@ -10,6 +10,7 @@ import { mergeMap, shareReplay, map } from 'rxjs/operators';
 })
 export class GalleryComponent implements OnInit {
   images: any;
+  galExpanded: boolean;
 
   constructor(
     private router: Router,
@@ -22,6 +23,10 @@ export class GalleryComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.images = data.entry.images;
     });
+  }
+
+  expandGallery() {
+    this.galExpanded = !this.galExpanded;
   }
 
 }

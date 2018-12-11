@@ -1,4 +1,9 @@
-<div class="gallery">
+<div 
+  class="gallery-shrink"
+  [ngClass]="{'expanded': galExpanded}">
+  
+</div>
+<div class="gallery" [ngClass]="{'expanded': galExpanded}" (click)="expandGallery()">
     <div 
       class="images"
       *ngFor="let image of images">
