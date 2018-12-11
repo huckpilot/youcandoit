@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   -webkit-overflow-scrolling: touch;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 
   ::selection {
     background-color: salmon;
@@ -44,7 +46,7 @@ p {
 
 a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'tofino', Helvetica, sans-serif;
   transition: color ease-in 0.3s;
 
   &:hover {
