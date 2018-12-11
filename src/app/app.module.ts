@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderMComponent } from './components/header-m/header-m.component';
+import { Angulartics2Module } from 'angulartics2';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HeaderMComponent } from './components/header-m/header-m.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Angulartics2Module.forRoot()
   ],
   providers: [
     GalleryGuard,
