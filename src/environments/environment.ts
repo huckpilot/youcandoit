@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://eunsoo.art/',
+  api: 'https://localhost:4200/',
 };
 
 /*

@@ -12,6 +12,6 @@ export class ImageService {
   }
 
   public getImages(slug: string) {
-    return this.http.get('http://localhost:4200/assets/' + slug + '.json').pipe(map(response => response));
+    return this.http.get(`${this.apiPath}/assets/` + slug + '.json').pipe(map(response => response));
   }
 }
