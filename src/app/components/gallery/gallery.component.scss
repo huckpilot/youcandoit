@@ -38,6 +38,7 @@
     z-index: 4;
     transition: transform 0.3s cubic-bezier(0.0, 0.0, 0.2, 1) 0.8s;
     opacity: 0;
+    filter: invert(100%);
   } 
 
   &.expanded {
