@@ -1,6 +1,6 @@
 <div class="container">
   <div class="header">
-    <div class="header-title"><span>E</span>unsoo <span>J</span>eong</div>
+    <a [routerLink]="['/']" class="home"><div class="header-title"><span>E</span>unsoo <span>J</span>eong</div></a>
     <div class="gallery-container" [ngClass]="{'active': toggleType}">
       <div [ngClass]="{'active': toggleType}" class="toggle-container" (click)="toggleSub()">
         <a class="toggle">Art</a><span class="arrow"></span>
