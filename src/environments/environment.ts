@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'https://localhost:4200/',
+  api: 'https://localhost:4200',
+  asset_path: '/assets'
 };
 
 /*

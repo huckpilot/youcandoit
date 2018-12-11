@@ -57,5 +57,20 @@
 .items {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid black;
+  position: relative;
+  // border-left: 1px solid black;
+
+  // add pseudo element
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 7px);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+  }
 }
