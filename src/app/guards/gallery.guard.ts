@@ -10,6 +10,7 @@ export class GalleryGuard implements Resolve<any> {
   ) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
+    debugger;
     return this.imageServ.getImages(route.params['slug']);
   }
 }
