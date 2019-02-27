@@ -35,6 +35,13 @@ const routes: Routes = [
         }
       },
       {
+        path: 'work/:slug/:slug/:slug',
+        component: GalleryComponent,
+        resolve: {
+          entry: GalleryGuard
+        }
+      },
+      {
         path: 'about',
         component: AboutComponent
       },

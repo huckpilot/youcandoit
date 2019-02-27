@@ -1,10 +1,10 @@
 <div class="container">
   <div class="header">
-    <a [routerLink]="['/']" class="home"><div class="header-title"><span>E</span>unsoo <span>J</span>eong</div></a>
+    <a [routerLink]="['/']" class="home"><div class="header-title">Eunsoo Jeong</div></a>
     <div class="gallery-container" [ngClass]="{'active': toggleType}">
-      <div [ngClass]="{'active': toggleType}" class="toggle-container" (click)="toggleSub()">
-        <a class="toggle">Art</a><span class="arrow"></span>
-      </div>
+      <!-- <div [ngClass]="{'active': toggleType}" class="toggle-container">
+        <a class="toggle">Animation</a><span class="arrow"></span>
+      </div> -->
       <div class="sub">
         <!-- <div class="sub-container link-b">
           <div [ngClass]="{'active': sketchbookItems}" class="toggle-container" (click)="toggleSketchbook()">
@@ -16,15 +16,39 @@
             <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/sketchbook/2016']">2016</a>
           </div>
         </div> -->
-        <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/backgrounds']">Backgrounds</a>
-        <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/color-styling']">Color Styling</a>
-        <div class="sub-container link-container" [ngClass]="{'active': comicItems}">
-          <div [ngClass]="{'active': comicItems}" class="toggle-container" (click)="toggleComic()">
-            <a class="toggle">Comics</a><span class="arrow"></span>
+        <!-- <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/backgrounds']">Backgrounds</a>
+        <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/color-styling']">Color Styling</a> -->
+        <div class="sub-container link-container">
+          <div [ngClass]="{'active': bgItems}" class="toggle-container">
+            <h4 class="toggle">Backgrounds</h4>
           </div>
           <div class="items">
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/comics/koreangry']">koreangry</a>
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/backgrounds/bg-sanjay']">Sanjay & Craig</a>
           </div>
+        </div>
+        <div class="sub-container link-container">
+          <div [ngClass]="{'active': csItems}" class="toggle-container">
+            <h4 class="toggle">Color Styling</h4>
+          </div>
+          <div class="items">
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/pinky']">Pinky Malinky</a>
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/cs-sanjay']">Sanjay & Craig</a>
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/shimmer']">Shimmer and Shine</a>
+          </div>
+        </div>
+        <div class="sub-container link-container">
+          <div [ngClass]="{'active': csItems}" class="toggle-container">
+            <h4 class="toggle">Illustration</h4>
+          </div>
+          <div class="items">
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/illustration/childrens-book']">Childrens Books</a>
+            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/illustration/misc']">Misc</a>
+          </div>
+        </div>
+        <div class="sub-container link-container">
+          <h4 [ngClass]="{'active': toggleType}" class="toggle-container">
+            <a class="toggle" [routerLinkActive]="'active'" [routerLink]="['/work/koreangry']">Koreangry</a>
+          </h4>
         </div>
       </div>
     </div>

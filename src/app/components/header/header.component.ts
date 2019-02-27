@@ -8,24 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   toggleType: boolean;
   sketchbookOpen: boolean;
-  sketchbookItems: boolean;
-  comicItems: boolean;
+  csItems: boolean;
+  bgItems: boolean;
 
   constructor() {
     this.toggleType = true;
-    this.comicItems = true;
+    this.bgItems = true;
+    this.csItems = true;
   }
 
   toggleSub() {
     this.toggleType = !this.toggleType;
   }
 
-  toggleSketchbook() {
-    this.sketchbookItems = !this.sketchbookItems;
+  toggleColor() {
+    this.csItems = !this.csItems;
   }
 
-  toggleComic() {
-    this.comicItems = !this.comicItems;
+  toggleBg() {
+    this.bgItems = !this.bgItems;
   }
 
   ngOnInit() {

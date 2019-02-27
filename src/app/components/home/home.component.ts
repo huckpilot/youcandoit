@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.landing = `${window.location.origin}/assets/images/splash.jpg`;
+    this.landing = `${window.location.origin}/assets/images/illustration/misc/misc-7.jpg`;
   }
 
 }
