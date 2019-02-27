@@ -45,11 +45,19 @@
             <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/illustration/misc']">Misc</a>
           </div>
         </div>
-        <div class="sub-container link-container">
+        <div class="sub-container link-container koreangry">
           <h4 [ngClass]="{'active': toggleType}" class="toggle-container">
-            <a class="toggle" [routerLinkActive]="'active'" [routerLink]="['/work/koreangry']">Koreangry</a>
+            <a class="toggle koreangry-link" [routerLinkActive]="'active'" [routerLink]="['/work/koreangry']">Koreangry</a>
           </h4>
         </div>
+        <div class="sub-container link-container external">
+            <h4>
+              <a class="toggle link" target="_blank" href="mailto:jeongeunsoo@gmail.com">Email me</a>
+              <a class="toggle link" target="_blank" href="https://www.instagram.com/madeinkorea1988">Instagram</a>
+              <a class="toggle link" target="_blank" href="https://www.linkedin.com/in/eunsoojeong/">LinkedIn</a>
+              <a class="toggle link" target="_blank" href="/assets/resume.pdf">Resume</a>
+            </h4>
+          </div>
       </div>
     </div>
     <!-- <a class="link-a" [routerLinkActive]="'active'" [routerLink]="['/about']">About</a>

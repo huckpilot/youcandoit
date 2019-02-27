@@ -1,5 +1,7 @@
 {
   "images": [
+    "assets/images/illustration/misc/misc-10.jpg",
+    "assets/images/illustration/misc/misc-11.gif",
     "assets/images/illustration/misc/misc-6.jpg", 
     "assets/images/illustration/misc/misc-9.jpg",
     "assets/images/illustration/misc/misc-1.jpg", 
@@ -7,7 +9,6 @@
     "assets/images/illustration/misc/misc-2.jpg",
     "assets/images/illustration/misc/misc-3.jpg", 
     "assets/images/illustration/misc/misc-4.jpg",
-    "assets/images/illustration/misc/misc-5.jpg",
-    "assets/images/illustration/misc/misc-7.jpg"
+    "assets/images/illustration/misc/misc-5.jpg"
   ]
 }

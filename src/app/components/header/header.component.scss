@@ -67,3 +67,22 @@
     color: #333333;
   }
 }
+
+.koreangry-link {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.external {
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.link {
+  display: block;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
