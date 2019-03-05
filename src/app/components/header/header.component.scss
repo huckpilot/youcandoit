@@ -70,7 +70,7 @@
 
 .koreangry-link {
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .external {
@@ -84,5 +84,48 @@
 
   & + & {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-container {
+    margin-top: 0;
+  }
+
+  .link-a {
+    & + & {
+      margin-top: 4px;
+    }
+  }
+
+  .link + .link {
+    margin-top: 4px;
+  }
+
+  .link {
+    margin-top: 4px;
+  }
+
+  .link-b {
+    margin-left: 4px;
+  }
+
+  .link-c {
+    margin-left: 4px;
+  }
+
+  .link-container {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+
+  .link-b,
+  .link-c {
+    margin-top: 4px;
+  }
+
+  .external {
+    margin-top: 8px;
+    padding-top: 8px;
   }
 }
