@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderMComponent } from './components/header-m/header-m.component';
 import { Angulartics2Module } from 'angulartics2';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { Angulartics2Module } from 'angulartics2';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     Angulartics2Module.forRoot()
   ],
   providers: [

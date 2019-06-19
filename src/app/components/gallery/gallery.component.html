@@ -1,12 +1,18 @@
-<div 
-  class="gallery-shrink"
-  [ngClass]="{'expanded': galExpanded}">
-  
+<div class="gallery-shrink" [ngClass]="{ expanded: galExpanded }"></div>
+<div *ngIf="protect" class="protect">
+  <div class="field-wrap">
+    <input type="text"
+    placeholder="Password"
+    (keyup)="onKey($event)">
+  </div>
 </div>
-<div class="gallery" [ngClass]="{'expanded': galExpanded}" (click)="expandGallery()">
-    <div 
-      class="images"
-      *ngFor="let image of images">
-      <img class="image" [src]="image" alt="">
+<div
+  *ngIf="!protect"
+  class="gallery"
+  [ngClass]="{ expanded: galExpanded }"
+  (click)="expandGallery()"
+>
+  <div class="images" *ngFor="let image of images">
+    <img class="image" [src]="image" alt="" />
   </div>
 </div>

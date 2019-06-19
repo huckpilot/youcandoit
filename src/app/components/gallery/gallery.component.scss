@@ -69,3 +69,20 @@
   display: block;
   width: 100%;
 }
+
+.protect {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    align-items: flex-start;
+  }
+}
+
+.field-wrap {
+  @media (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
