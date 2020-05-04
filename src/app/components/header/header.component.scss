@@ -34,6 +34,13 @@
 .link-b,
 .link-c {
   margin-top: 8px;
+  transition: color ease-in 0.2s;
+
+  &:active,
+  &:hover,
+  &.active {
+    color: #8e32f0;
+  }
 }
 
 .toggle {
@@ -63,8 +70,9 @@
 }
 
 .header-title {
-  color: #333333;
   font-size: 21px;
+  color: #8e32f0;
+  font-weight: 100;
 
   span {
     color: #333333;
@@ -130,5 +138,12 @@
   .external {
     margin-top: 8px;
     padding-top: 8px;
+  }
+
+  .link {
+    &:active,
+    &:hover {
+      color: #8e32f0;
+    }
   }
 }
