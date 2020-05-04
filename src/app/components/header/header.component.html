@@ -1,7 +1,9 @@
 <div class="container">
   <div class="header">
-    <a [routerLink]="['/']" class="home"><div class="header-title">Eunsoo Jeong</div></a>
-    <div class="gallery-container" [ngClass]="{'active': toggleType}">
+    <a [routerLink]="['/']" class="home"
+      ><div class="header-title">Eunsoo Jeong</div></a
+    >
+    <div class="gallery-container" [ngClass]="{ active: toggleType }">
       <!-- <div [ngClass]="{'active': toggleType}" class="toggle-container">
         <a class="toggle">Animation</a><span class="arrow"></span>
       </div> -->
@@ -19,55 +21,140 @@
         <!-- <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/backgrounds']">Backgrounds</a>
         <a class="link-b" [routerLinkActive]="'active'" [routerLink]="['/work/color-styling']">Color Styling</a> -->
         <div class="sub-container link-container">
-          <div [ngClass]="{'active': bgItems}" class="toggle-container">
+          <div [ngClass]="{ active: bgItems }" class="toggle-container">
             <h4 class="toggle">Backgrounds</h4>
           </div>
           <div class="items">
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/backgrounds/bg-sanjay']">Sanjay & Craig</a>
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/backgrounds/bg-sanjay']"
+              >Sanjay & Craig</a
+            >
           </div>
         </div>
         <div class="sub-container link-container">
-          <div [ngClass]="{'active': csItems}" class="toggle-container">
+          <div [ngClass]="{ active: csItems }" class="toggle-container">
             <h4 class="toggle">Color Styling</h4>
           </div>
           <div class="items">
-              <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/cleopatra']">Cleopatra in Space</a>
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/pinky']">Pinky Malinky</a>
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/cs-sanjay']">Sanjay & Craig</a>
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/shimmer']">Shimmer and Shine</a>
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/animation/color-styling/test']">Tests</a>
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="[
+                '/work/animation/color-styling/archibalds-next-big-thing'
+              ]"
+              >Archibald's Next Big Thing</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/color-styling/cleopatra']"
+              >Cleopatra in Space</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/color-styling/pinky']"
+              >Pinky Malinky</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/color-styling/cs-sanjay']"
+              >Sanjay & Craig</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/color-styling/shimmer']"
+              >Shimmer and Shine</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/animation/color-styling/test']"
+              >Tests</a
+            >
           </div>
         </div>
         <div class="sub-container link-container">
-          <div [ngClass]="{'active': csItems}" class="toggle-container">
+          <div [ngClass]="{ active: csItems }" class="toggle-container">
             <h4 class="toggle">Illustration</h4>
           </div>
           <div class="items">
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/illustration/childrens-book']">Childrens Books</a>
-            <a class="link-c" [routerLinkActive]="'active'" [routerLink]="['/work/illustration/misc']">Misc</a>
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/illustration/childrens-book']"
+              >Childrens Books</a
+            >
+            <a
+              class="link-c"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/illustration/misc']"
+              >Misc</a
+            >
           </div>
         </div>
         <div class="sub-container link-container koreangry">
-          <h4 [ngClass]="{'active': toggleType}" class="toggle-container">
-            <a class="toggle koreangry-link" [routerLinkActive]="'active'" [routerLink]="['/work/koreangry']">Koreangry</a>
+          <h4 [ngClass]="{ active: toggleType }" class="toggle-container">
+            <a
+              class="toggle koreangry-link"
+              [routerLinkActive]="'active'"
+              [routerLink]="['/work/koreangry']"
+              >Koreangry</a
+            >
           </h4>
           <div class="items">
-            <a class="link-c" target="_blank" href="https://gumroad.com/koreangry">Gumroad Store</a>
-            <a class="link-c" target="_blank" href="https://www.instagram.com/koreangry/">Instagram</a>
-            <a class="link-c" target="_blank" href="https://www.facebook.com/koreangry/">Facebook</a>
+            <a
+              class="link-c"
+              target="_blank"
+              href="https://gumroad.com/koreangry"
+              >Gumroad Store</a
+            >
+            <a
+              class="link-c"
+              target="_blank"
+              href="https://www.instagram.com/koreangry/"
+              >Instagram</a
+            >
+            <a
+              class="link-c"
+              target="_blank"
+              href="https://www.facebook.com/koreangry/"
+              >Facebook</a
+            >
           </div>
         </div>
         <div class="sub-container link-container external">
-            <h4>
-              <a class="toggle link" target="_blank" href="mailto:jeongeunsoo@gmail.com">Email me</a>
-              <a class="toggle link" target="_blank" href="https://www.instagram.com/madeinkorea1988">Instagram</a>
-              <a class="toggle link" target="_blank" href="https://www.linkedin.com/in/eunsoojeong/">LinkedIn</a>
-              <a class="toggle link" target="_blank" href="/assets/resume.pdf">Resume</a>
-            </h4>
-          </div>
+          <h4>
+            <a
+              class="toggle link"
+              target="_blank"
+              href="mailto:jeongeunsoo@gmail.com"
+              >Email me</a
+            >
+            <a
+              class="toggle link"
+              target="_blank"
+              href="https://www.instagram.com/madeinkorea1988"
+              >Instagram</a
+            >
+            <a
+              class="toggle link"
+              target="_blank"
+              href="https://www.linkedin.com/in/eunsoojeong/"
+              >LinkedIn</a
+            >
+            <a class="toggle link" target="_blank" href="/assets/resume.pdf"
+              >Resume</a
+            >
+          </h4>
+        </div>
       </div>
     </div>
     <!-- <a class="link-a" [routerLinkActive]="'active'" [routerLink]="['/about']">About</a>
     <a class="link-a" [routerLinkActive]="'active'" [routerLink]="['/contact']">Contact</a> -->
   </div>
-</div>  
+</div>

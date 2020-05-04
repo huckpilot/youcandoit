@@ -1,5 +1,18 @@
-<div class="container">
-  <div class="splash">
-    <img class="splash-image" [src]="landing" alt="">
+<div class="gallery-shrink" [ngClass]="{ expanded: galExpanded }"></div>
+<div
+  class="gallery"
+  [ngClass]="{ expanded: galExpanded }"
+  (click)="expandGallery()"
+>
+  <div class="intro">
+    <div class="title">
+      Eunsoo Jeong
+    </div>
+    <div class="description">
+      Interdisciplinary Artist, Color Designer
+    </div>
+  </div>
+  <div class="images" *ngFor="let image of images">
+    <img class="image" [src]="image" alt="" />
   </div>
 </div>

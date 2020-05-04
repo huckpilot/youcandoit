@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
-import { environment } from '../../environments/environment';
-import { Observable, Subject } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { map } from "rxjs/operators";
+import { environment } from "../../environments/environment";
+import { Observable, Subject } from "rxjs";
 
 @Injectable()
 export class ImageService {
@@ -31,6 +31,14 @@ export class ImageService {
   }
 
   public getImages(slug: string) {
-    return this.http.get(`${this.apiPath}/assets/` + slug + '.json').pipe(map(response => response));
+    if (slug) {
+      return this.http
+        .get(`${this.apiPath}/assets/` + slug + ".json")
+        .pipe(map((response) => response));
+    } else {
+      return this.http
+        .get(`${this.apiPath}/assets/misc.json`)
+        .pipe(map((response) => response));
+    }
   }
 }
