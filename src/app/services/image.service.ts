@@ -37,7 +37,7 @@ export class ImageService {
         .pipe(map((response) => response));
     } else {
       return this.http
-        .get(`${this.apiPath}/assets/misc.json`)
+        .get(`${this.apiPath}/assets/home.json`)
         .pipe(map((response) => response));
     }
   }

@@ -3,7 +3,7 @@
   right: 0;
   top: 0;
   direction: rtl;
-  transition: width 0.7s cubic-bezier(0.0, 0.0, 0.2, 1);
+  transition: width 0.7s cubic-bezier(0, 0, 0.2, 1);
   width: 100%;
   background: white;
   cursor: pointer;
@@ -24,26 +24,25 @@
   position: fixed;
   top: 16px;
   left: 8px;
-  transition: opacity 0.3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
 
-  &::before, 
+  &::before,
   &::after {
-    content: '';
+    content: "";
     width: 36px;
     height: 4px;
     position: absolute;
-    background: #5d3bc8;
+    background: #8e32f0;
     top: 23px;
     left: 7px;
     z-index: 4;
-    transition: transform 0.3s cubic-bezier(0.0, 0.0, 0.2, 1) 0.8s;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1) 0.8s;
     opacity: 0;
-    filter: invert(100%);
-  } 
+  }
 
   &.expanded {
     opacity: 0.8;
-    transition: opacity 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.7s;
+    transition: opacity 0.7s cubic-bezier(0, 0, 0.2, 1) 0.7s;
 
     &::before {
       opacity: 1;
