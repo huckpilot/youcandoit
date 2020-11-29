@@ -29,7 +29,6 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         if (
-          this.router.url === "/work/animation/color-styling/cleopatra" ||
           this.router.url ===
             "/work/animation/color-styling/archibalds-next-big-thing"
         ) {
