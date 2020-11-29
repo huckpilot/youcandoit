@@ -22,6 +22,7 @@
     "@angular/router": "^6.0.3",
     "angulartics2": "^7.2.3",
     "core-js": "^2.5.4",
+    "node-sass": "^4.14.1",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.3.3",
     "ui-router": "^1.0.0-alpha.3",
