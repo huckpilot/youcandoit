@@ -28,16 +28,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        if (
-          this.router.url ===
-            "/work/animation/color-styling/archibalds-next-big-thing"
-        ) {
-          if (!this.added) {
-            this.imgSrv.sendForm(true);
-          }
-        } else {
-          this.imgSrv.sendForm(false);
-        }
+        this.imgSrv.sendForm(false);
       }
     });
   }
